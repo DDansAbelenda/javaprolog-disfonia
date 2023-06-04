@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="576.0" prefWidth="768.0" styleClass="ventanas" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diagnosticodisfonia.controller.DiagnosticoController">
+   <children>
+      <TabPane fx:id="tabPaneNav" layoutX="52.0" layoutY="20.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab fx:id="tabSintomas" text="Síntomas">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="292.0" layoutY="35.0" styleClass="labelEncabezado" text="Datos del paciente" />
+                        <AnchorPane layoutX="29.0" layoutY="19.0" onMouseClicked="#backPrincipal" prefHeight="62.0" prefWidth="62.0">
+                           <children>
+                              <FontAwesomeIcon fill="WHITE" iconName="ARROW_CIRCLE_LEFT" layoutX="16.0" layoutY="32.0" size="3em" styleClass="button-nav" />
+                              <Label layoutX="3.0" layoutY="37.0" styleClass="labelNav" text="Regresar" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="676.0" layoutY="19.0" onMouseClicked="#irASignos" prefHeight="62.0" prefWidth="62.0">
+                           <children>
+                              <FontAwesomeIcon fill="WHITE" iconName="ARROW_CIRCLE_RIGHT" layoutX="16.0" layoutY="32.0" size="3em" styleClass="button-nav" />
+                              <Label layoutX="11.0" layoutY="37.0" styleClass="labelNav" text="Signos" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="29.0" layoutY="109.0" styleClass="labelFormulario" text="Nombre y apellidos:" />
+                        <TextField fx:id="nombre_paciente" layoutX="245.0" layoutY="96.0" prefHeight="38.0" prefWidth="338.0" promptText="-- Introducir nombre y apellidos --" styleClass="prueba-text-field" />
+                        <JFXCheckBox fx:id="is_fumador" layoutX="621.0" layoutY="110.0" prefHeight="18.0" prefWidth="123.0" text="¿Fumador?" />
+                        <Label layoutX="328.0" layoutY="246.0" styleClass="labelEncabezado" text="Síntomas" />
+                        <Label layoutX="29.0" layoutY="167.0" styleClass="labelFormulario" text="Tiempo de padecimiento: " />
+                        <TextField fx:id="cant_dias" layoutX="245.0" layoutY="149.0" prefHeight="38.0" prefWidth="92.0" promptText="-- días --" styleClass="prueba-text-field" />
+                        <Label layoutX="347.0" layoutY="167.0" styleClass="labelFormulario" text="días." />
+                        <Pane fx:id="paneSintomas" layoutX="11.0" layoutY="321.0" prefHeight="255.0" prefWidth="768.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <JFXCheckBox layoutX="26.0" layoutY="30.0" prefHeight="18.0" prefWidth="123.0" text="Flema" />
+                              <JFXCheckBox layoutX="176.0" layoutY="30.0" prefHeight="18.0" prefWidth="123.0" text="Carraspera" />
+                              <JFXCheckBox layoutX="572.0" layoutY="30.0" prefHeight="18.0" prefWidth="123.0" text="Tos" />
+                              <JFXCheckBox layoutX="341.0" layoutY="83.0" prefHeight="18.0" prefWidth="123.0" text="Cansancio vocal" />
+                              <JFXCheckBox layoutX="176.0" layoutY="83.0" prefHeight="18.0" prefWidth="123.0" text="Diplofonía" />
+                              <JFXCheckBox layoutX="26.0" layoutY="83.0" prefHeight="18.0" prefWidth="123.0" text="Ronquera" />
+                              <JFXCheckBox layoutX="341.0" layoutY="30.0" prefHeight="18.0" prefWidth="123.0" text="Irritación faríngea" />
+                              <JFXCheckBox layoutX="572.0" layoutY="83.0" prefHeight="18.0" prefWidth="123.0" text="Dolor de garganta" />
+                              <JFXCheckBox layoutX="26.0" layoutY="135.0" prefHeight="18.0" prefWidth="123.0" text="Afonías cortas y abruptas" />
+                              <JFXCheckBox layoutX="341.0" layoutY="187.0" prefHeight="18.0" prefWidth="123.0" text="Dificultad para los tonos agudos o graves" />
+                              <JFXCheckBox layoutX="26.0" layoutY="187.0" prefHeight="18.0" prefWidth="123.0" text="Sensación de cuerpo extraño" />
+                              <JFXCheckBox layoutX="341.0" layoutY="135.0" prefHeight="18.0" prefWidth="123.0" text="Pseudosíntoma respiratorio" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="TabSignos" onSelectionChanged="#seleccionarTabSignos" text="Signos">
+               <content>
+                  <AnchorPane fx:id="paneSignos" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="343.0" layoutY="33.0" styleClass="labelEncabezado" text="Signos" />
+                        <AnchorPane layoutX="29.0" layoutY="19.0" onMouseClicked="#irASintomas" prefHeight="62.0" prefWidth="68.0">
+                           <children>
+                              <FontAwesomeIcon fill="WHITE" iconName="ARROW_CIRCLE_LEFT" layoutX="16.0" layoutY="32.0" size="3em" styleClass="button-nav" />
+                              <Label layoutX="2.0" layoutY="36.0" styleClass="labelNav" text="Síntomas" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="646.0" layoutY="19.0" onMouseClicked="#irALaring" prefHeight="62.0" prefWidth="118.0">
+                           <children>
+                              <FontAwesomeIcon fill="WHITE" iconName="ARROW_CIRCLE_RIGHT" layoutX="46.0" layoutY="32.0" size="3em" styleClass="button-nav" />
+                              <Label layoutX="17.0" layoutY="37.0" styleClass="labelNav" text="Laringoscopía" />
+                           </children>
+                        </AnchorPane>
+                        <JFXCheckBox layoutX="40.0" layoutY="109.0" text="Contracción de los músculos de la cara" />
+                        <JFXCheckBox layoutX="40.0" layoutY="157.0" text="Hipertrofia de los músculos del cuello" />
+                        <JFXCheckBox layoutX="412.0" layoutY="109.0" text="Enrojecimiento de cara o cuello" />
+                        <JFXCheckBox layoutX="412.0" layoutY="158.0" text="Ingurgitación de los vasos del cuello" />
+                        <JFXCheckBox layoutX="41.0" layoutY="203.0" text="Sudoración, temblor, parpadeo" />
+                        <JFXCheckBox layoutX="412.0" layoutY="203.0" text="Hipofonía (intensidad dismiunida)" />
+                        <JFXCheckBox layoutX="41.0" layoutY="250.0" text="Tono disminuido" />
+                        <JFXCheckBox layoutX="412.0" layoutY="250.0" text="Exhaustación respiratoria" />
+                        <JFXCheckBox layoutX="41.0" layoutY="298.0" text="Voz de banda" />
+                        <JFXCheckBox layoutX="412.0" layoutY="298.0" text="Espasticidad" />
+                        <JFXCheckBox layoutX="40.0" layoutY="344.0" text="Monotonía" />
+                        <JFXCheckBox layoutX="413.0" layoutY="345.0" text="Voz normal durante risa o llanto" />
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+            <Tab fx:id="TabLaring" onSelectionChanged="#seleccionarTabResultadosLaring" text="Resultados de la Laringoscopía">
+               <content>
+                  <AnchorPane fx:id="paneLaringoscopia" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="227.0" layoutY="38.0" styleClass="labelEncabezado" text="Resultados de la Laringoscopía" />
+                        <AnchorPane layoutX="29.0" layoutY="19.0" onMouseClicked="#irASignos" prefHeight="62.0" prefWidth="68.0">
+                           <children>
+                              <FontAwesomeIcon fill="WHITE" iconName="ARROW_CIRCLE_LEFT" layoutX="16.0" layoutY="32.0" size="3em" styleClass="button-nav" />
+                              <Label layoutX="9.0" layoutY="36.0" styleClass="labelNav" text="Signos" />
+                           </children>
+                        </AnchorPane>
+                        <JFXCheckBox layoutX="41.0" layoutY="110.0" text="Déficit de aducción" />
+                        <JFXCheckBox layoutX="41.0" layoutY="148.0" text="Cambio de coloración de las cuerdas vocales" />
+                        <JFXCheckBox layoutX="459.0" layoutY="149.0" text="Cáncer de Laringe" />
+                        <JFXCheckBox layoutX="41.0" layoutY="228.0" text="Nódulos" />
+                        <JFXCheckBox layoutX="43.0" layoutY="461.0" text="Hipertrofia de Bandas Ventriculares" />
+                        <JFXCheckBox layoutX="41.0" layoutY="304.0" text="Quistes" />
+                        <JFXCheckBox layoutX="41.0" layoutY="343.0" text="Lesiones quísticas" />
+                        <JFXCheckBox layoutX="42.0" layoutY="382.0" text="Lesiones papilomatosas" />
+                        <JFXCheckBox layoutX="458.0" layoutY="384.0" text="Pseudomixomatosis" />
+                        <JFXCheckBox layoutX="42.0" layoutY="424.0" text="Edema de Reinke" />
+                        <JFXCheckBox layoutX="459.0" layoutY="114.0" text="Leucoplasia" />
+                        <JFXCheckBox layoutX="41.0" layoutY="188.0" text="Hematoma de cuerda vocal" />
+                        <JFXCheckBox layoutX="459.0" layoutY="188.0" text="Parálisis de cuerdas vocales" />
+                        <JFXCheckBox layoutX="459.0" layoutY="228.0" text="Paresia de cuerdas vocales" />
+                        <JFXCheckBox layoutX="41.0" layoutY="267.0" text="Úlcera" />
+                        <JFXCheckBox layoutX="458.0" layoutY="270.0" text="Membrana laríngea" />
+                        <JFXCheckBox layoutX="458.0" layoutY="310.0" text="Aritenoides inflamados" />
+                        <JFXCheckBox layoutX="458.0" layoutY="348.0" text="Aritenoides desplazados" />
+                        <Button layoutX="498.0" layoutY="440.0" mnemonicParsing="false" onAction="#diagnosticar" prefHeight="42.0" prefWidth="144.0" text="Diagnosticar">
+                           <graphic>
+                              <FontAwesomeIcon fill="#fcfafa" iconName="STETHOSCOPE" size="1.2em" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+   <stylesheets>
+      <URL value="@css/ventanas.css" />
+      <URL value="@css/formulario.css" />
+   </stylesheets>
+</AnchorPane>

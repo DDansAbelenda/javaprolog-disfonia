@@ -1,0 +1,100 @@
+/*Esta hoja de estilo contiene los estilos de los formularios */
+
+/*Estilo para los botones(iconos) que permiten navegar*/
+.button-nav{
+    -fx-fill: white;  
+}
+
+
+/*Estilo para los botones*/
+Button{
+    -fx-background-color: #707581;
+    -fx-border-width: 2;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 18px;
+    -fx-background-radius: 40 ;
+
+    /*-fx-border-color: WHITE;*/
+}
+
+Button:hover{
+    -fx-background-color: #949DA6;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 0, 0); 
+}
+
+/*Estilo general para todos los text-field*/
+.text-field{
+    -fx-font-size: 20px;
+    -fx-text-fill: #363636; 
+    -fx-font-family: 'Times New Roman';
+    -fx-background-color: transparent;
+    -fx-border-color: #363636;
+    -fx-border-width: 0 0 1.3 0;
+    -fx-border-style: solid;
+    -fx-prompt-text-fill: #797F8B;
+}
+
+/*Estilo para los label de los formularios*/
+.labelFormulario {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0), 0, 0, 0, 0);/*Esto es para 
+    anular el efecto del padre*/
+    -fx-font-size: 20px;  
+    -fx-text-fill: #363636;
+}
+
+/*Estilo para checkBox*/
+.check-box{
+    -fx-font-family: "Times New Roman";
+    /*-fx-text-fill: white;*/
+    -fx-text-fill: #363636;
+    /*-fx-font-weight: bold;*/
+    /*-fx-effect: dropshadow(gaussian, rgba(0,0,0,1), 10, 0, 0, 1);*/
+    -fx-font-size: 20px;
+}
+
+
+/*Estilo para el tabPane*/
+
+/* Modificar el color de fondo del área del Panel de TabPane Listo*/
+.tab-pane {
+    -fx-background-color: radial-gradient(center 90% 90%, radius 60%, #D0D5DA, #99A2AB);
+    -fx-border-width: 0;
+}
+/* Modificar el color de fondo de la pestaña Listo*/
+.tab {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+/* Modificar el color de fondo de la barra superior */
+.tab-pane>*.tab-header-area>*.tab-header-background
+{
+    -fx-background-color: transparent;
+    -fx-boder-color:transparent;
+}
+/* Modificar el color del texto en la pestaña */
+.tab-label {
+    -fx-text-fill: #E7EAEC; /*Color de texto de la pestaña*/
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    /*-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 0, 0); */
+}
+/* Selector secundario, seleccione su etiqueta de elemento secundario cuando se selecciona Tabulador */
+.tab:selected .tab-label {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 0, 0); 
+}
+/* Establecer el color de fondo cuando se selecciona la pestaña */
+.tab:selected {
+    -fx-border-color: transparent transparent #363636 transparent;
+    -fx-border-width: 0px 0px 1.5px 0px;
+    -fx-border-radius: 0px;
+}
+/* Cuando se selecciona Tab, seleccione su borde y modifique el estilo */
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-color: transparent transparent #363636 transparent;
+    -fx-border-width: 0px 0px 1.5px 0px;
+    -fx-border-radius: 0px;
+
+}
