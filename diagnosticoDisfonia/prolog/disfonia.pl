@@ -10,7 +10,7 @@ todos_miembros([],_).
 todos_miembros([X|L1],L2):- miembro(X,L2),todos_miembros(L1,L2).
 
 
-%%%%%%%%%% SÌNTOMAS %%%%%%%%%%
+%%%%%%%%%% SÌNTOMAS %%%%%%%%%%%
 % comezantes
 sintoma('Flema').
 sintoma('Carraspera').
