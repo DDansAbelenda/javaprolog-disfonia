@@ -8,27 +8,27 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="768.0" styleClass="ventanas" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diagnosticodisfonia.controller.DisfoniaProfesionalController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="768.0" styleClass="ventanas" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diagnosticodisfonia.controller.DisfoniaProfesionalController">
    <stylesheets>
       <URL value="@css/ventanas.css" />
       <URL value="@css/formulario.css" />
    </stylesheets>
    <children>
-      <ImageView fitHeight="633.0" fitWidth="310.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fitHeight="576.0" fitWidth="189.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../../imagenes/interrogante.png" />
          </image>
       </ImageView>
-      <TextArea editable="false" layoutX="196.0" layoutY="92.0" prefHeight="537.0" prefWidth="558.0" styleClass="labelFormulario" text="La disfonía es una condición que afecta la calidad y la capacidad vocal de una persona. Tanto los profesores como los cantantes son profesionales que utilizan su voz de manera intensa y prolongada, lo que los hace más susceptibles a desarrollar problemas de disfonía.&#10;&#10;-&#9;La profesión docente exige un sobreesfuerzo continuo de la voz para transmitir o enfatizar conocimientos al alumnado. Ello se agrava cuando las condiciones en el proceso de enseñanza-aprendizaje son inadecuadas (mayor número de horas de docencia, ambiente ruidoso o aulas con deficiente acústica) repercutiendo en la salud y el desempeño educativo de los maestros. La Organización Internacional del Trabajo considera al profesorado como la primera categoría profesional bajo riesgo de contraer enfermedades profesionales de la voz. Son numerosos los estudios que evidencian una alta prevalencia del desorden vocal relacionada con la presencia de hábitos y factores de riesgo tanto personales como laborales. &#10;&#10;-&#9;Todo cantante debe tener una técnica y un cuidado vocal adecuados para no llegar a presentar alguno de los tipos de disfonías. Aun así, hay cada vez más competición profesional entre los cantantes de todas las edades, lo que puede redundar en hacer que tomen más y más repertorio sin tener en cuenta su capacidad vocal, tipo de voz, registro vocal, etc., con tal de estar en el medio y en la competencia laboral. Esto y una mala técnica vocal pueden llevar a los cantantes a presentar alguno de los tipos de disfonías vocales a lo largo de su carrera profesional.&#10;&#10;&#10;" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="185.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="85.0" />
+      <TextArea editable="false" layoutX="189.0" layoutY="93.0" prefHeight="493.0" prefWidth="574.0" styleClass="labelFormulario" text="La disfonía es una condición que afecta la calidad y la capacidad vocal de una persona. Tanto los profesores como los cantantes son profesionales que utilizan su voz de manera intensa y prolongada, lo que los hace más susceptibles a desarrollar problemas de disfonía.&#10;&#10;-&#9;La profesión docente exige un sobreesfuerzo continuo de la voz para transmitir o enfatizar conocimientos al alumnado. Ello se agrava cuando las condiciones en el proceso de enseñanza-aprendizaje son inadecuadas (mayor número de horas de docencia, ambiente ruidoso o aulas con deficiente acústica) repercutiendo en la salud y el desempeño educativo de los maestros. La Organización Internacional del Trabajo considera al profesorado como la primera categoría profesional bajo riesgo de contraer enfermedades profesionales de la voz. Son numerosos los estudios que evidencian una alta prevalencia del desorden vocal relacionada con la presencia de hábitos y factores de riesgo tanto personales como laborales. &#10;&#10;-&#9;Todo cantante debe tener una técnica y un cuidado vocal adecuados para no llegar a presentar alguno de los tipos de disfonías. Aun así, hay cada vez más competición profesional entre los cantantes de todas las edades, lo que puede redundar en hacer que tomen más y más repertorio sin tener en cuenta su capacidad vocal, tipo de voz, registro vocal, etc., con tal de estar en el medio y en la competencia laboral. Esto y una mala técnica vocal pueden llevar a los cantantes a presentar alguno de los tipos de disfonías vocales a lo largo de su carrera profesional.&#10;&#10;&#10;" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="185.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="85.0" />
       <Label layoutX="300.0" layoutY="46.0" styleClass="labelEncabezado" text="Disfonía en voz profesional" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="35.0">
          <graphic>
             <FontAwesomeIcon fill="#f8f8f8" iconName="SEARCH" size="1.2em" wrappingWidth="32.714284896850586" />
          </graphic>
       </Label>
-      <AnchorPane layoutX="24.0" layoutY="9.0" onMouseClicked="#backCuriosidades" prefHeight="73.0" prefWidth="66.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="20.0">
+      <AnchorPane layoutX="24.0" layoutY="9.0" onMouseClicked="#backCuriosidades" prefHeight="65.0" prefWidth="66.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="20.0">
          <children>
             <FontAwesomeIcon fill="WHITE" iconName="ARROW_CIRCLE_LEFT" layoutX="16.0" layoutY="42.0" size="3em" styleClass="button-nav" AnchorPane.topAnchor="3.428569793701172" />
-            <Label layoutX="3.0" layoutY="47.0" styleClass="labelNav" text="Regresar" />
+            <Label layoutX="3.0" layoutY="42.0" styleClass="labelNav" text="Regresar" />
          </children>
       </AnchorPane>
    </children>

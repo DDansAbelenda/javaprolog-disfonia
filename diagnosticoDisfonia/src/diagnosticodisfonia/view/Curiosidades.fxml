@@ -8,9 +8,9 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="768.0" styleClass="ventanas" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diagnosticodisfonia.controller.CuriosidadesController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="768.0" styleClass="ventanas" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diagnosticodisfonia.controller.CuriosidadesController">
    <children>
-      <ImageView fitHeight="633.0" fitWidth="310.0" layoutX="443.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="458.0" AnchorPane.topAnchor="0.0">
+      <ImageView fitHeight="576.0" fitWidth="310.0" layoutX="443.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="458.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../../imagenes/curiosidades.png" />
          </image>
@@ -60,10 +60,10 @@
             <String fx:value="labelCuriosidad" />
          </styleClass>
       </Label>
-      <AnchorPane layoutX="15.0" layoutY="21.0" onMouseClicked="#backPrincipal" prefHeight="68.0" prefWidth="67.0" AnchorPane.bottomAnchor="518.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="686.0" AnchorPane.topAnchor="20.0">
+      <AnchorPane layoutX="15.0" layoutY="21.0" onMouseClicked="#backPrincipal" prefHeight="62.0" prefWidth="67.0" AnchorPane.bottomAnchor="494.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="686.0" AnchorPane.topAnchor="20.0">
          <children>
-            <FontAwesomeIcon fill="WHITE" iconName="ARROW_CIRCLE_LEFT" layoutX="15.0" layoutY="40.0" size="3em" styleClass="button-nav" />
-            <Label layoutX="3.0" layoutY="44.0" styleClass="labelNav" text="Regresar" />
+            <FontAwesomeIcon fill="WHITE" iconName="ARROW_CIRCLE_LEFT" layoutX="15.0" layoutY="36.0" size="3em" styleClass="button-nav" />
+            <Label layoutX="3.0" layoutY="40.0" styleClass="labelNav" text="Regresar" />
          </children>
       </AnchorPane>
    </children>

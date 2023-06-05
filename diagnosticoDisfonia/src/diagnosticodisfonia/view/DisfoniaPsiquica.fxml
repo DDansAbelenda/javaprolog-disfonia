@@ -8,13 +8,13 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="768.0" styleClass="ventanas" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diagnosticodisfonia.controller.DisfoniaPsiquicaController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="768.0" styleClass="ventanas" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diagnosticodisfonia.controller.DisfoniaPsiquicaController">
    <stylesheets>
       <URL value="@css/ventanas.css" />
       <URL value="@css/formulario.css" />
    </stylesheets>
    <children>
-      <ImageView fitHeight="633.0" fitWidth="310.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fitHeight="576.0" fitWidth="189.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../../imagenes/interrogante.png" />
          </image>
@@ -25,10 +25,10 @@
             <FontAwesomeIcon fill="#f8f8f8" iconName="SEARCH" size="1.2em" wrappingWidth="32.714284896850586" />
          </graphic>
       </Label>
-      <AnchorPane layoutX="24.0" layoutY="23.0" onMouseClicked="#backCuriosidades" prefHeight="72.0" prefWidth="66.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="20.0">
+      <AnchorPane layoutX="24.0" layoutY="23.0" onMouseClicked="#backCuriosidades" prefHeight="60.0" prefWidth="66.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="20.0">
          <children>
             <FontAwesomeIcon fill="WHITE" iconName="ARROW_CIRCLE_LEFT" layoutX="16.0" layoutY="39.0" size="3em" styleClass="button-nav" AnchorPane.topAnchor="0.4285697937011719" />
-            <Label layoutX="3.0" layoutY="44.0" styleClass="labelNav" text="Regresar" />
+            <Label layoutX="3.0" layoutY="36.0" styleClass="labelNav" text="Regresar" />
          </children>
       </AnchorPane>
    </children>
