@@ -47,19 +47,19 @@ public class Pl_Connection {
         solucion = q.nextSolution();
 
         enfermedad = solucion.get("Enfermedad").toString().replace('\'', ' ').trim();
-        if (!enfermedad.equals("Sano")) {
-            tipo = tipo_disfonia(dias);
+        if (enfermedad.equals("Sano") || enfermedad.equals("Posible Disfonía")) {
+            tipo = "---";            
         } else {
-            tipo = "---";
+            tipo = tipo_disfonia(dias);
         }
-        
+
         String[] respuesta = {enfermedad, tipo};
         return respuesta;
     }
-    
-    public void retract_fumador(){
+
+    public void retract_fumador() {
         consulta = "retract(fumador(_,_)).";
-        q= new Query(consulta);
+        q = new Query(consulta);
         q.hasSolution();
     }
 
@@ -72,7 +72,7 @@ public class Pl_Connection {
         return tipo;
     }
 
-    private void assert_fumador(String nombre,Boolean fumador) {
+    private void assert_fumador(String nombre, Boolean fumador) {
         if (fumador) {
             consulta = String.format("assert(fumador(%s,1)).", nombre);
             q = new Query(consulta);
