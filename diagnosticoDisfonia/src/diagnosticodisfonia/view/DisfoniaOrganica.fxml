@@ -25,10 +25,10 @@
             <FontAwesomeIcon fill="#f8f8f8" iconName="SEARCH" size="1.2em" wrappingWidth="32.714284896850586" />
          </graphic>
       </Label>
-      <AnchorPane layoutX="24.0" layoutY="15.0" onMouseClicked="#backCuriosidades" prefHeight="61.0" prefWidth="66.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="20.0">
+      <AnchorPane layoutX="19.0" layoutY="23.0" onMouseClicked="#backCuriosidades" prefHeight="55.0" prefWidth="67.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="20.0">
          <children>
-            <FontAwesomeIcon fill="WHITE" iconName="ARROW_CIRCLE_LEFT" layoutX="16.0" layoutY="37.0" size="3em" styleClass="button-nav" AnchorPane.topAnchor="-1.5714302062988281" />
-            <Label layoutX="3.0" layoutY="35.0" styleClass="labelNav" text="Regresar" />
+            <FontAwesomeIcon fill="WHITE" iconName="ARROW_CIRCLE_LEFT" layoutX="18.0" layoutY="30.85714340209961" size="3em" styleClass="button-nav" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.14285659790039" AnchorPane.topAnchor="0.0" />
+            <Label layoutX="3.0" layoutY="33.0" styleClass="labelNav" text="Regresar" />
          </children>
       </AnchorPane>
    </children>
