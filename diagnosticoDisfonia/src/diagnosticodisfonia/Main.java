@@ -9,6 +9,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -28,6 +29,7 @@ public class Main extends Application {
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setResizable(false);
         stage.setScene(scene);
+        stage.getIcons().add(new Image("/imagenes/icono.png"));
         Main.stage = stage;
         stage.show();
 
