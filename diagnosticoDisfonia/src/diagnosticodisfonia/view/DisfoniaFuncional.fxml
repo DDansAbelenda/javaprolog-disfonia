@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="768.0" scaleShape="false" styleClass="ventanas" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diagnosticodisfonia.controller.DisfoniaFuncionalController">
+   <stylesheets>
+      <URL value="@css/ventanas.css" />
+      <URL value="@css/formulario.css" />
+   </stylesheets>
+   <children>
+      <ImageView fitHeight="633.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../imagenes/interrogante.png" />
+         </image>
+      </ImageView>
+      <TextArea editable="false" layoutX="186.0" layoutY="82.0" prefHeight="537.0" prefWidth="558.0" styleClass="labelFormulario" text="La disfonía funcional es un trastorno de la voz en el cual los cambios en la calidad vocal no están relacionados con ninguna alteración estructural en las cuerdas vocales o en otras partes del sistema vocal. En cambio, se debe a una disfunción en la coordinación y funcionamiento de los músculos y estructuras vocales durante la producción de la voz.&#10;&#10;Una vez que se ha establecido el diagnóstico, el tratamiento de la disfonía funcional suele implicar la terapia vocal realizada por un especialista en terapia de voz o un foniatra, que se enfoca en corregir los patrones de producción vocal incorrectos, mejorar la coordinación muscular y reducir la tensión vocal. Esto puede incluir ejercicios de respiración, técnicas de relajación, ejercicios para fortalecer y flexibilizar los músculos vocales, así como la reeducación de los patrones de habla y el establecimiento de hábitos vocales saludables.&#10;&#10;" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="185.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="85.0" />
+      <Label layoutX="290.0" layoutY="36.0" styleClass="labelEncabezado" text="Disfonía Funcional" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="35.0">
+         <graphic>
+            <FontAwesomeIcon fill="#f8f8f8" iconName="SEARCH" size="1.2em" wrappingWidth="32.714284896850586" />
+         </graphic>
+      </Label>
+      <AnchorPane layoutX="14.0" layoutY="12.0" onMouseClicked="#backCuriosidades" prefHeight="70.0" prefWidth="66.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="688.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <FontAwesomeIcon fill="WHITE" iconName="ARROW_CIRCLE_LEFT" layoutX="16.0" layoutY="41.0" size="3em" styleClass="button-nav" AnchorPane.topAnchor="2.428569793701172" />
+            <Label layoutX="3.0" layoutY="46.0" styleClass="labelNav" text="Regresar" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

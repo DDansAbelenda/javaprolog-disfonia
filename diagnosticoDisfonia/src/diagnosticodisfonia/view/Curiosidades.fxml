@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="768.0" styleClass="ventanas" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diagnosticodisfonia.controller.CuriosidadesController">
+   <children>
+      <ImageView fitHeight="633.0" fitWidth="310.0" layoutX="443.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="458.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../imagenes/curiosidades.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="386.0" layoutY="188.0" onMouseClicked="#isADisfoniaOrganica" text="Disfonía Orgánica">
+         <graphic>
+            <FontAwesomeIcon fill="#f8f8f8" iconName="SEARCH" size="1.2em" wrappingWidth="32.714284896850586" />
+         </graphic>
+         <styleClass>
+            <String fx:value="labelEncabezado" />
+            <String fx:value="labelCuriosidad" />
+         </styleClass>
+      </Label>
+      <Label layoutX="386.0" layoutY="285.0" onMouseClicked="#irADisfoniaPsiquica" text="Disfonía Psíquica">
+         <graphic>
+            <FontAwesomeIcon fill="#f8f8f8" iconName="SEARCH" size="1.2em" wrappingWidth="32.714284896850586" />
+         </graphic>
+         <styleClass>
+            <String fx:value="labelEncabezado" />
+            <String fx:value="labelCuriosidad" />
+         </styleClass>
+      </Label>
+      <Label layoutX="386.0" layoutY="383.0" onMouseClicked="#irADisfoniaProfesional" text="Disfonía en voz profesional">
+         <graphic>
+            <FontAwesomeIcon fill="#f8f8f8" iconName="SEARCH" size="1.2em" wrappingWidth="32.714284896850586" />
+         </graphic>
+         <styleClass>
+            <String fx:value="labelEncabezado" />
+            <String fx:value="labelCuriosidad" />
+         </styleClass>
+      </Label>
+      <Label layoutX="386.0" layoutY="473.0" onMouseClicked="#irAConsejos" text="Consejos">
+         <graphic>
+            <FontAwesomeIcon fill="#f8f8f8" iconName="SEARCH" size="1.2em" wrappingWidth="32.714284896850586" />
+         </graphic>
+         <styleClass>
+            <String fx:value="labelEncabezado" />
+            <String fx:value="labelCuriosidad" />
+         </styleClass>
+      </Label>
+      <Label layoutX="386.0" layoutY="95.0" onMouseClicked="#irADisfoniaFuncional" text="Disfonía Funcional">
+         <graphic>
+            <FontAwesomeIcon fill="#f8f8f8" iconName="SEARCH" size="1.2em" wrappingWidth="32.714284896850586" />
+         </graphic>
+         <styleClass>
+            <String fx:value="labelEncabezado" />
+            <String fx:value="labelCuriosidad" />
+         </styleClass>
+      </Label>
+      <AnchorPane layoutX="15.0" layoutY="21.0" onMouseClicked="#backPrincipal" prefHeight="68.0" prefWidth="67.0" AnchorPane.bottomAnchor="518.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="686.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <FontAwesomeIcon fill="WHITE" iconName="ARROW_CIRCLE_LEFT" layoutX="15.0" layoutY="40.0" size="3em" styleClass="button-nav" />
+            <Label layoutX="3.0" layoutY="44.0" styleClass="labelNav" text="Regresar" />
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@css/ventanas.css" />
+      <URL value="@css/formulario.css" />
+   </stylesheets>
+</AnchorPane>

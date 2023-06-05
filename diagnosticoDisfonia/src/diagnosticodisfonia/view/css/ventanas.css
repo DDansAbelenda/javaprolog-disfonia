@@ -11,7 +11,7 @@
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,1), 10, 0, 0, 1);
 }
 #paneBarraSuperior{
-    -fx-background-color:  #666C72
+    -fx-background-color:  #666C72;
 }
 /*Estilo para los label que titulan las diferentes vistas*/
 .labelEncabezado {

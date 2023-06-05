@@ -45,7 +45,11 @@ public class InicioController implements Initializable {
     }
 
     @FXML
-    private void curiosidades(ActionEvent event) {
+    private void curiosidades(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/diagnosticodisfonia/view/Curiosidades.fxml"));
+        Node node = loader.load();
+        PrincipalController.paneGlobal.getChildren().clear();
+        PrincipalController.paneGlobal.getChildren().add(node);
 
     }
 

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="768.0" styleClass="ventanas" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diagnosticodisfonia.controller.ConsejosController">
+   <stylesheets>
+      <URL value="@css/ventanas.css" />
+      <URL value="@css/formulario.css" />
+   </stylesheets>
+   <children>
+      <ImageView fitHeight="639.0" fitWidth="224.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../imagenes/interrogante.png" />
+         </image>
+      </ImageView>
+      <TextArea editable="false" layoutX="206.0" layoutY="102.0" prefHeight="537.0" prefWidth="558.0" styleClass="labelFormulario" text="1-&#9;No carraspear.&#10;2-&#9;Hablar despacio y articulando bien las palabras.&#10;3-&#9;No hablar durante demasiado tiempo y no usar un tono elevado que obligue a forzar la voz.&#10;4-&#9;Evitar hablar en lugares muy ruidosos.&#10;5-&#9;Practicar técnicas de buena respiración al hablar o cantar.&#10;6-&#9;Evitar los ambientes secos y los cambios bruscos de temperaturas.&#10;7-&#9;Hidratarse correctamente.&#10;8-&#9;Evitar el humo y el tabaco.&#10;9-&#9;Limitar el consumo de alcohol.&#10;10-&#9;Evitar comidas picantes. &#10;11-&#9;Descansar correctamente.&#10;12-&#9;Reducir el consumo de cafeína.&#10;&#10;" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="185.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="85.0" />
+      <Label layoutX="245.0" layoutY="36.0" styleClass="labelEncabezado" text="Consejos para el cuidado de la voz" AnchorPane.leftAnchor="245.0" AnchorPane.topAnchor="36.0">
+         <graphic>
+            <FontAwesomeIcon fill="#f8f8f8" iconName="SEARCH" size="1.2em" wrappingWidth="32.714284896850586" />
+         </graphic>
+      </Label>
+      <AnchorPane layoutX="34.0" layoutY="13.0" onMouseClicked="#backCuriosidades" prefHeight="69.0" prefWidth="66.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <FontAwesomeIcon fill="WHITE" iconName="ARROW_CIRCLE_LEFT" layoutX="16.0" layoutY="41.0" size="3em" styleClass="button-nav" AnchorPane.topAnchor="2.428569793701172" />
+            <Label layoutX="3.0" layoutY="43.0" styleClass="labelNav" text="Regresar" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
