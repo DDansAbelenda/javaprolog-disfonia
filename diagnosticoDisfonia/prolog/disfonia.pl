@@ -75,11 +75,15 @@ diagnostica(Paciente, 'Sano', [],[],Laringoscopia):-
 
 diagnostica(Paciente,'Disfonía Psíquica', Sintomas, Signos, []):-
       long(Sintomas,Length1),Length1>0,
+      findall(X,sintoma(X),List1), todos_miembros(Sintomas,List1), % verifica que todos los síntomas pertenezcan a los registrados
+      findall(X,signo(X),List2),   todos_miembros(Signos,List2), % verifica que todos los signos pertenezcan a los registrados
       miembro('Voz normal durante risa o llanto', Signos),
       !.
 diagnostica(Paciente,'Disfonía Psíquica', Sintomas, Signos, Laringoscopia):-
       fumador(Paciente,1),
       long(Sintomas,Length1),Length1>0,
+      findall(X,sintoma(X),List1), todos_miembros(Sintomas,List1),
+      findall(X,signo(X),List2),   todos_miembros(Signos,List2),
       miembro('Voz normal durante risa o llanto', Signos),
       long(Laringoscopia,1),
       miembro('Cambio de coloración de las cuerdas vocales',Laringoscopia),
@@ -88,18 +92,18 @@ diagnostica(Paciente,'Disfonía Psíquica', Sintomas, Signos, Laringoscopia):-
 
 diagnostica(Paciente,'Disfonía Funcional', Sintomas, Signos, Laringoscopia):-
       %long(Sintomas,Length1),Length1>0,
-      findall(X,sintoma(X),List1), todos_miembros(Sintomas,List1),  % que todos pertenezcan a los registrados
+      findall(X,sintoma(X),List1), todos_miembros(Sintomas,List1),
       %long(Signos,Length2),Length2>0,
-      findall(X,signo(X),List2),   todos_miembros(Signos,List2),    % que todos pertenezcan a los registrados
+      findall(X,signo(X),List2),   todos_miembros(Signos,List2),
       long(Laringoscopia,1),
       miembro('Déficit de aducción',Laringoscopia),
       !.
 diagnostica(Paciente,'Disfonía Funcional', Sintomas, Signos, Laringoscopia):-
       fumador(Paciente,1),
       %long(Sintomas,Length1),Length1>0,
-      findall(X,sintoma(X),List1), todos_miembros(Sintomas,List1),  % que todos pertenezcan a los registrados
+      findall(X,sintoma(X),List1), todos_miembros(Sintomas,List1),
       %long(Signos,Length2),  Length2>0,
-      findall(X,signo(X),List2),   todos_miembros(Signos,List2),    % que todos pertenezcan a los registrados
+      findall(X,signo(X),List2),   todos_miembros(Signos,List2),
       long(Laringoscopia,2),
       miembro('Déficit de aducción',Laringoscopia),
       miembro('Cambio de coloración de las cuerdas vocales',Laringoscopia),
@@ -109,10 +113,10 @@ diagnostica(Paciente,'Disfonía Funcional', Sintomas, Signos, Laringoscopia):-
 diagnostica(Paciente,'Disfonía Orgánica', Sintomas, Signos, Laringoscopia):-
       fumador(Paciente,0),
       %long(Sintomas,Length1),Length1>0,
-      findall(X,sintoma(X),List1), todos_miembros(Sintomas,List1),  % que todos pertenezcan a los registrados
+      findall(X,sintoma(X),List1), todos_miembros(Sintomas,List1),
       %long(Signos,Length2),  Length2>0,
-      findall(X,signo(X),List2),   todos_miembros(Signos,List2),    % que todos pertenezcan a los registrados
-      long(Laringoscopia,Length3),  Length3>0, findall(X,prueba(X),List3),   todos_miembros(Laringoscopia,List3),    % que todos pertenezcan a los registrados
+      findall(X,signo(X),List2),   todos_miembros(Signos,List2),
+      long(Laringoscopia,Length3),  Length3>0, findall(X,prueba(X),List3), todos_miembros(Laringoscopia,List3),  % verifica que todas las pruebas pertenezcan a los registrados
       !.
 
       
