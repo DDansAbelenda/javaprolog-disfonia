@@ -1,4 +1,4 @@
 # javaprolog_disfonia
-Esta aplicación es un sistema experto para el diagnóstico de la enfermedad Disfonía. Incluye una base de conocimiento en prolog.
-
-Autores: Daniel Dans Abelenda y Aida Rosa Calvo Fleites
+This application is an expert system for the diagnosis of Dysphonia disease. Includes a knowledge base in prolog.
+Java-version: JDK 1.8
+Authors: Daniel Dans Abelenda y Aida Rosa Calvo Fleites
